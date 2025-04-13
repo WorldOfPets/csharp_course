@@ -1,1 +1,10 @@
-
+# [Теоретический материал C#-METANIT](https://metanit.com/sharp/aspnet6/1.1.php)
+# [Roadmap](https://github.com/milanm/DotNet-Developer-Roadmap/tree/main)
+# [Опрос](https://docs.google.com/forms/d/e/1FAIpQLSdCqBn6VcU6APCrBDVL2SeByox7srDdRSTGUgvBDsoJRNPh6A/viewform?usp=header)
+### Набор необходимых инструментов 
+1. [Visual Studio 2022](https://visualstudio.microsoft.com/ru/vs/community/)
+  - ![image](https://github.com/user-attachments/assets/09b51663-1a21-42f8-936c-11fc2133a1e4)
+  - ![image](https://github.com/user-attachments/assets/211e229b-7f5f-4bb2-afa7-db27e4ab6a2d)
+2. [Git](https://git-scm.com/)
+3. [Postman](https://www.postman.com/downloads/)
+4. [MS SQL Managment Studio](https://learn.microsoft.com/ru-ru/ssms/download-sql-server-management-studio-ssms?view=aps-pdw-2016-au7&tabs=command-line)
