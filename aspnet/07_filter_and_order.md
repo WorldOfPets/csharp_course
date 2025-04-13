@@ -197,11 +197,17 @@ namespace FilteringSortingApi.Controllers
                 // Поддержка сортировки по полям связанной сущности
                 if (sortBy.Contains("Category."))
                 {
-                    query = query.OrderBy($"{sortBy} {direction}");
+                    var catNameSort = sortBy.Split(".")[1];
+                    query = query.OrderBy(p => p.Category.Name == catNameSort);
                 }
                 else
                 {
-                    query = query.OrderBy($"p => p.{sortBy} {direction}");
+                    query = sortBy switch {
+                        "Price" => query.OrderBy(p => p.Price),
+                        "CreatedDate" => query.OrderBy(p => p.CreatedDate),
+                        "Name" => query.OrderBy(p => p.Name),
+                        _ => query
+                    };
                 }
             }
 
@@ -343,7 +349,8 @@ GET /api/products?sortBy=Price&sortOrder=desc
 ```
 POST /api/seed
 ```
-
+### 6. Задание
+1. Во время сортировки переменная `direction` не задействована. Все товары сортируются по умолчанию `ASC`. **Задействйте данную переменную.
 
 
 
