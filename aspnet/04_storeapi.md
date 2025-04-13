@@ -51,7 +51,7 @@ public class User
             Permissions.Add(permission);
         }
     }
-    //public ICollection<Cart> Carts { get; set; }
+    //public Cart cart { get; set; }
     //public ICollection<Session> Sessions { get; set; }
     //public ICollection<Order> Orders { get; set; }
     //public ICollection<AdminLog> AdminLogs { get; set; }
