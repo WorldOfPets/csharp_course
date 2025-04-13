@@ -116,10 +116,6 @@ namespace FilteringSortingApi.Data
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(connectionString));
-
-// Добавьте Identity (опционально)
-builder.Services.AddDefaultIdentity<IdentityUser>()
-    .AddEntityFrameworkStores<AppDbContext>();
 ```
 
 2. Добавьте строку подключения в `appsettings.json`:
