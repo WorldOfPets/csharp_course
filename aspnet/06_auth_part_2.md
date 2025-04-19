@@ -240,7 +240,9 @@ namespace AuthLab.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdatePost(int id, PostDto postDto)
         {
-            var post = await _context.Posts.FindAsync(id);
+            var post = await context.Posts
+                .Include(p => p.Author)
+                .FirstOrDefaultAsync(p => p.Id == id);
             if (post == null)
             {
                 return NotFound();
@@ -282,7 +284,9 @@ namespace AuthLab.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePost(int id)
         {
-            var post = await _context.Posts.FindAsync(id);
+            var post = await context.Posts
+                .Include(p => p.Author)
+                .FirstOrDefaultAsync(p => p.Id == id);
             if (post == null)
             {
                 return NotFound();
