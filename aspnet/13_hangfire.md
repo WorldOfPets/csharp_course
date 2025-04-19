@@ -19,11 +19,13 @@
 1. Создайте новый проект ASP.NET Core Web API:
 
 2. Установите необходимые пакеты:
-```bash
-dotnet add package Hangfire.Core
-dotnet add package Hangfire.AspNetCore
-dotnet add package Hangfire.MemoryStorage
-```
+- Hangfire.Core
+- Hangfire.AspNetCore
+- Hangfire.MemoryStorage
+- Hangfire.SqlServer
+- Hangfire.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.Design
+- Microsoft.EntityFrameworkCore.SqlServer
 
 3. Настройте Hangfire в `Program.cs`:
 ```csharp
