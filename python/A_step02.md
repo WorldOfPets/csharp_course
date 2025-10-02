@@ -104,7 +104,7 @@ git init
 2. Создайте .gitignore  
 Создайте файл .gitignore в корне проекта:
 ```gitignore
-venv/
+.venv/
 __pycache__/
 *.pyc
 db.sqlite3
