@@ -110,7 +110,7 @@ jobs:
 
 3. Сохраните файл и добавьте его в Git:
 ```bash
-git add .github/workflows/test.yml setup.sh setup.bat
+git add .github/workflows/test.yml setup.bat
 git commit -m "ci: add setup scripts and GitHub Actions workflow"
 ```
 
